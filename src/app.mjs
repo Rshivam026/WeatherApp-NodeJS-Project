@@ -3,7 +3,7 @@ const app = express();
 import path from 'path';
 import { fileURLToPath } from 'url';
 import hbs from 'hbs'
-const Port =  8000 ;
+const Port = process.env.PORT ||  8000 ;
 
 //to get static file from public folder
 const __filename = fileURLToPath(import.meta.url) // this will give path to our current file
